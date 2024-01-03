@@ -1,0 +1,28 @@
+.Box-Everywhere{
+ 
+}
+
+@media screen and (max-width: 500px) {
+    .Box-Everywhere a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+#bild-DeMuemmer
+{
+    
+}
+
+#rcorners1 {
+    margin-top: 150px;
+    border-radius: 25px;
+
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    background: #73AD21;
+    text-align: center;
+
+  }
