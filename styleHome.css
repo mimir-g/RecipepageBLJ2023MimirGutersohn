@@ -74,5 +74,16 @@ body
 
 #score {
   font-size: 18px;
+
+}
+
+#justText-index
+{
+  text-align: center;
+  font-size: 20px;
+}
+
+#highscore
+{
   
 }

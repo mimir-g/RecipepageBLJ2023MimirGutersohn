@@ -1,5 +1,5 @@
 #slideshow-Recipe {
-    margin-top: 140px; /* Ändere die Höhe entsprechend der Höhe deines Headers */
+  margin-top: 140px;   /* Ändere die Höhe entsprechend der Höhe deines Headers */
 }
 
 * {box-sizing: border-box}
@@ -99,9 +99,9 @@ img {vertical-align: middle;}
 #box-Recipe
 {
     display: block;
-    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 25px;
 
     border-radius: 25px;
     padding: 20px;

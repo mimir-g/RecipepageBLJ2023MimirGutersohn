@@ -31,9 +31,9 @@
 
     <div class="clicker-container">
         <img src="PANCAKES.jpg" alt="Clicker Image" id="clickerImage" onclick="increaseScore()">
-        <p><b id="score">Score: 0</b></p>
+        <p id="score">Score: 0</p>
+        <p id="highscore">Highscore: 0</p>
     </div>
-         
 
     <script>
         function reloadPage() {
@@ -48,21 +48,31 @@
             clickSound.play();
         }
 
-        </script>
-
-        <script>
         // Added clicker game JavaScript
         let score = 0;
+        let highscore = localStorage.getItem('highscore') || 0;
 
         function increaseScore() {
             score++;
             updateScore();
+            updateHighscore();
             playClickSound();
         }
 
         function updateScore() {
             document.getElementById('score').textContent = `Score: ${score}`;
         }
+
+        function updateHighscore() {
+            if (score > highscore) {
+                highscore = score;
+                localStorage.setItem('highscore', highscore);
+                document.getElementById('highscore').textContent = `Highscore: ${highscore}`;
+            }
+        }
+
+        // Initialize highscore on page load
+        document.getElementById('highscore').textContent = `Highscore: ${highscore}`;
     </script>
 </body>
 </html>
