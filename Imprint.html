@@ -13,16 +13,36 @@
 <body>
 
     <div class="header">
-        <a href="" class="logo">Company Logo
-        </a>
+        <a href="#" class="logo" onclick="reloadPage()">Reload Page</a>
+   
+        <audio id="clickSound">
+            <source src="rehehehe.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
         
-        <div class="header-middle"></div>
+        <div class="header-middle">
+        </div>
         <div class="header-right">
             <a href="index.html">Home</a>
             <a href="Recipe.html">Recipe</a>
             <a class="active" href="Imprint.html">Imprint</a>
         </div>
     </div>
+
+    <script>
+        function reloadPage() {
+            playClickSound();
+            setTimeout(function () {
+                location.reload();
+            }, 1000); // Warte 1 Sekunde, bevor die Seite neu geladen wird
+        }
+    
+        function playClickSound() {
+            var clickSound = document.getElementById("clickSound");
+            clickSound.play();
+        }
+    </script>
+   
     
 
     <img id="bild-DeMuemmer" src="DeMuemmer.png" style="

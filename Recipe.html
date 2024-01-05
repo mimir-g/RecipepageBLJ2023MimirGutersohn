@@ -11,17 +11,37 @@
 </head>
 <body>
 
-    <div class="header">
-        <a href="" class="logo">Company Logo
-        </a>
-        
-        <div class="header-middle"></div>
-        <div class="header-right">
-            <a href="index.html">Home</a>
-            <a class="active" href="Recipe.html">Recipe</a>
-            <a href="Imprint.html">Imprint</a>
-        </div>
+  <div class="header">
+    <a href="#" class="logo" onclick="reloadPage()">Reload Page</a>
+
+    <audio id="clickSound">
+        <source src="rehehehe.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="header-middle">
     </div>
+    <div class="header-right">
+        <a href="index.html">Home</a>
+        <a class="active" href="Recipe.html">Recipe</a>
+        <a href="Imprint.html">Imprint</a>
+    </div>
+</div>
+
+
+<script>
+  function reloadPage() {
+      playClickSound();
+      setTimeout(function () {
+          location.reload();
+      }, 1000); // Warte 1 Sekunde, bevor die Seite neu geladen wird
+  }
+
+  function playClickSound() {
+      var clickSound = document.getElementById("clickSound");
+      clickSound.play();
+  }
+</script>
 
     <div id="slideshow-Recipe">
         <div class="slideshow-container">
@@ -29,91 +49,162 @@
             <div class="mySlides fade">
               <div class="numbertext">1 / 15</div>
               <img src="Pancakes 1.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
+              <div class="text"><b>Ingredients:</b>
+                <p>250ml Milk
+                    • 2 Tablespoons Sugar
+                    • 1 Egg
+                    • 1 Tablespoon Baking powder
+                    • 1 Teaspoon Salt
+                    • 250g any sort of flour (recommended white flour)
+                    • 2-3 Tablespoons Oil
+                    • (optional) Fried butter</p>
+              </div>
             </div>
             
             <div class="mySlides fade">
               <div class="numbertext">2 / 15</div>
               <img src="Pancakes 2.jpg" style="width:100%">
-              <div class="text">Caption Two</div>
+              <div class="text"><b>Materials</b> 
+                <p>• 1 Glas
+                    • 1 Tablespoon
+                    • 1 Pan
+                    • 1 Bowl
+                    • 1 Soup ladle
+                    • 1 Cup (250ml)
+                    • 1 Cup (125ml)
+                    • 1 Fork
+                    • 1 frying shovel
+                    • 1 Whisk
+                    
+                </p>
+              </div>
             </div>
             
             <div class="mySlides fade">
               <div class="numbertext">3 / 15</div>
               <img src="Pancakes 3.jpg" style="width:100%">
-              <div class="text">Caption Three</div>
+              <div class="text"><b>Mix all dry ingredients</b> 
+                <p>
+                    Put salt, sugar, baking powder and the flour into a bowl.
+                </p>
+              </div>
             </div>
             
             <div class="mySlides fade">
                 <div class="numbertext">4 / 15</div>
                 <img src="Pancakes 4.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Create a hole.</b>
+                    <p>
+                        Blend the dry ingredients together and make a hole in the middle.
+                        Use the whisk for this.
+                    </p>
+                </div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">5 / 15</div>
                 <img src="Pancakes 5.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Put in the milk.</b>
+                <p>
+                    Put in the 250ml of milk into the hole in the middle.
+                </p>
+            </div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">6 / 15</div>
                 <img src="Pancakes 6.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Put the egg into a glass.</b></div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">7 / 15</div>
                 <img src="Pancakes 7 .jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Stir the egg with the fork.</b>
+                <p>
+                    Then put the stirred egg into the bowl with ingredients.
+                </p>
+            </div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">8 / 15</div>
                 <img src="Pancakes 8.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Put the Oil into the bowl.</b>
+                <p>
+                    Put the 2-3 tablespoons of oil into the bowl.
+                </p>
+            </div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">9 / 15</div>
                 <img src="Pancakes 9.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Use the whisk to stir everything around.</b>
+                <p>
+                    Whisk until you have a smooth batter.
+                </p>
+            </div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">10 / 15</div>
                 <img src="Pancakes 10.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Start heating up the pan.</b>
+                <p>
+                    Start heating up the pan at medium heat. When the pan is getting warm, put into a bit of fried butter
+                    so the Pancake dough is not sticked to the pan.
+                </p>
+                </div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">11 / 15</div>
                 <img src="Pancakes 11.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Place the pancakes dough in the pan.</b>
+                <p>
+                    Take about ¾ of a ladle for each pancake. Use the soup ladle for this task.
+                </p>
+                </div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">12 / 15</div>
                 <img src="Pancakes 12.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>If taken the correct quantity, it should look like
+                    this.</b></div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">13 / 15</div>
                 <img src="Pancakes 13.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Turn pancakes with fry shovel.</b>
+                <p>
+                    When the Pancakes surface starts to get these holes, its time to turn them. You also smell it.
+                If you think, they are not good enough. You can just flip them back around with the fry shovel.
+                </p>
+                </div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">14 / 15</div>
                 <img src="Pancakes 14.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Should look something like this.</b>
+                <p>
+                    When the Pancakes are flipped, it should look something like this.
+                </p>
+            </div>
               </div>
             
               <div class="mySlides fade">
                 <div class="numbertext">15 / 15</div>
                 <img src="Pancakes 15.jpg" style="width:100%">
-                <div class="text">Caption Four</div>
+                <div class="text"><b>Est Voila!</b>
+                    <p>
+                        Now you know how to make easy and fast pancakes!
+                        I hope you liked it!
+                    </p>
+                </div>
               </div>
             
             
@@ -185,7 +276,7 @@
 
 <div id="box-Recipe">
     <p>Download Link PDF</p>
-    <span> Click <a id="link-Recipe" href="RECIPE_Pancakes_MimirGutersohn.docx" download>here</a> to Download </span>
+    <span> Click <a id="link-Recipe" href="RECIPE_Pancakes_MimirGutersohn.pdf" download>here</a> to Download </span>
     
 </div>
  
